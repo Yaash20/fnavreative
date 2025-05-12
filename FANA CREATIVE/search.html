@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian | Fana Creative</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f8f8f8; color: #333;">
+    <!-- Header -->
+    <header style="background-color: #ffffff; border-bottom: 1px solid #e5e5e5; padding: 15px 0;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" style="font-size: 18px; font-weight: bold; color: #333; text-decoration: none;">FANA CREATIVE</a>
+        
+        <div style="display: flex; align-items: center;">
+            <nav>
+                <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-right: 20px;"><a href="index.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Beranda</a></li>
+                    <li style="margin-right: 20px;"><a href="tentang.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Tentang Kami</a></li>
+                    <li style="margin-right: 20px;"><a href="pakaian.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Pakaian</a></li>
+                    <li style="margin-right: 20px;"><a href="kontak.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Selengkapnya</a></li>
+                </ul>
+            </nav>
+            
+            <div style="display: flex; align-items: center;">
+                <a href="search.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <a href="login.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                </a>
+                <a href="keranjang" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Search Results -->
+    <section style="padding: 80px 0;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <div style="margin-bottom: 40px;">
+                <h1 style="font-size: 36px; margin-bottom: 10px;">Hasil Pencarian</h1>
+                <div style="display: flex; align-items: center; margin-bottom: 30px;">
+                    <div style="position: relative; width: 100%; max-width: 500px;">
+                        <input type="text" value="kaos" placeholder="Cari produk..." style="padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; width: 100%;">
+                        <button style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <p style="margin-left: 45px;">Menampilkan 6 hasil untuk "kaos"</p>
+                </div>
+                
+                <!-- Filter and Sort -->
+                <div style="display: flex; justify-content: space-between; margin-bottom: 30px; flex-wrap: wrap; gap: 20px;">
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <div>
+                            <label for="category" style="display: block; margin-bottom: 5px; font-weight: bold;">Kategori</label>
+                            <select id="category" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px;">
+                                <option value="">Semua Kategori</option>
+                                <option value="tshirt" selected>Kaos</option>
+                                <option value="shirt">Kemeja</option>
+                                <option value="pants">Celana</option>
+                                <option value="jacket">Jaket</option>
+                                <option value="accessories">Aksesoris</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="size" style="display: block; margin-bottom: 5px; font-weight: bold;">Ukuran</label>
+                            <select id="size" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px;">
+                                <option value="">Semua Ukuran</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="color" style="display: block; margin-bottom: 5px; font-weight: bold;">Warna</label>
+                            <select id="color" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; min-width: 150px;">
+                                <option value="">Semua Warna</option>
+                                <option value="black">Hitam</option>
+                                <option value="white">Putih</option>
+                                <option value="gray">Abu-abu</option>
+                                <option value="blue">Biru</option>
+                                <option value="red">Merah</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="sort" style="display: block; margin-bottom: 5px; font-weight: bold;">Urutkan</label>
+                        <select id="sort" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; min-width: 200px;">
+                            <option value="relevance">Paling Relevan</option>
+                            <option value="price-low">Harga: Rendah ke Tinggi</option>
+                            <option value="price-high">Harga: Tinggi ke Rendah</option>
+                            <option value="newest">Terbaru</option>
+                            <option value="bestselling">Terlaris</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search Results Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                <!-- Product 1 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 1" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Original</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos dengan desain original Fana</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 150.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Premium</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos premium dengan bahan katun combed 30s</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 180.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Vintage</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos dengan desain vintage yang klasik</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 165.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 4" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Oversized</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos dengan potongan oversized yang nyaman</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 175.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 5" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Graphic</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos dengan desain grafis yang unik</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 160.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Kaos 6" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kaos Fana Polos</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kaos polos dengan kualitas premium</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 145.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; margin-top: 40px;">
+                <div style="display: flex; gap: 5px;">
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6"></path>
+                        </svg>
+                    </a>
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #333; background-color: #333; color: white; border-radius: 4px; text-decoration: none;">1</a>
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">2</a>
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">3</a>
+                    <span style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;">...</span>
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">10</a>
+                    <a href="#" style="width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 50px 0; text-align: center;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="font-size: 28px; font-weight: bold; margin-bottom: 20px;">FANA CREATIVE</div>
+                <div style="margin: 20px 0;">
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Twitter</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    &copy; 2023 Fana Creative. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

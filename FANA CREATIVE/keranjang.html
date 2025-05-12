@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja | Fana Creative</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f8f8f8; color: #333;">
+    <!-- Header -->
+    <header style="background-color: #ffffff; border-bottom: 1px solid #e5e5e5; padding: 15px 0;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" style="font-size: 18px; font-weight: bold; color: #333; text-decoration: none;">FANA CREATIVE</a>
+        
+        <div style="display: flex; align-items: center;">
+            <nav>
+                <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-right: 20px;"><a href="index.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Beranda</a></li>
+                    <li style="margin-right: 20px;"><a href="tentang.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Tentang Kami</a></li>
+                    <li style="margin-right: 20px;"><a href="pakaian.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Pakaian</a></li>
+                    <li style="margin-right: 20px;"><a href="kontak.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Selengkapnya</a></li>
+                </ul>
+            </nav>
+            
+            <div style="display: flex; align-items: center;">
+                <a href="search.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <a href="login.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                </a>
+                <a href="keranjang.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Cart Section -->
+    <section style="padding: 80px 0;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 36px; margin-bottom: 30px;">Keranjang Belanja</h1>
+            
+            <!-- Cart Items -->
+            <div style="margin-bottom: 40px;">
+                <div style="background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden;">
+                    <!-- Table Header -->
+                    <div style="display: grid; grid-template-columns: 100px 2fr 1fr 1fr 1fr 50px; padding: 15px; background-color: #f0f0f0; font-weight: bold;">
+                        <div>Gambar</div>
+                        <div>Produk</div>
+                        <div>Harga</div>
+                        <div>Jumlah</div>
+                        <div>Total</div>
+                        <div></div>
+                    </div>
+                    
+                    <!-- Cart Item 1 -->
+                    <div style="display: grid; grid-template-columns: 100px 2fr 1fr 1fr 1fr 50px; padding: 15px; border-bottom: 1px solid #eee; align-items: center;">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80" alt="T-Shirt" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0 0 5px 0; font-size: 18px;">T-Shirt Fana Original</h3>
+                            <p style="margin: 0; color: #666;">Ukuran: L, Warna: Hitam</p>
+                        </div>
+                        <div>Rp 150.000</div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 4px 0 0 4px; cursor: pointer;">-</button>
+                                <input type="number" value="1" min="1" style="width: 40px; height: 30px; border: 1px solid #ddd; border-left: none; border-right: none; text-align: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 0 4px 4px 0; cursor: pointer;">+</button>
+                            </div>
+                        </div>
+                        <div>Rp 150.000</div>
+                        <div>
+                            <button style="background: none; border: none; cursor: pointer; color: #ff6b6b;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 2 -->
+                    <div style="display: grid; grid-template-columns: 100px 2fr 1fr 1fr 1fr 50px; padding: 15px; border-bottom: 1px solid #eee; align-items: center;">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80" alt="Hoodie" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0 0 5px 0; font-size: 18px;">Hoodie Fana Premium</h3>
+                            <p style="margin: 0; color: #666;">Ukuran: M, Warna: Abu-abu</p>
+                        </div>
+                        <div>Rp 280.000</div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 4px 0 0 4px; cursor: pointer;">-</button>
+                                <input type="number" value="1" min="1" style="width: 40px; height: 30px; border: 1px solid #ddd; border-left: none; border-right: none; text-align: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 0 4px 4px 0; cursor: pointer;">+</button>
+                            </div>
+                        </div>
+                        <div>Rp 280.000</div>
+                        <div>
+                            <button style="background: none; border: none; cursor: pointer; color: #ff6b6b;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 3 -->
+                    <div style="display: grid; grid-template-columns: 100px 2fr 1fr 1fr 1fr 50px; padding: 15px; align-items: center;">
+                        <div>
+                            <img src="https://via.placeholder.com/80x80" alt="Topi" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <h3 style="margin: 0 0 5px 0; font-size: 18px;">Topi Fana Signature</h3>
+                            <p style="margin: 0; color: #666;">Ukuran: All Size, Warna: Hitam</p>
+                        </div>
+                        <div>Rp 120.000</div>
+                        <div>
+                            <div style="display: flex; align-items: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 4px 0 0 4px; cursor: pointer;">-</button>
+                                <input type="number" value="1" min="1" style="width: 40px; height: 30px; border: 1px solid #ddd; border-left: none; border-right: none; text-align: center;">
+                                <button style="width: 30px; height: 30px; background-color: #f0f0f0; border: 1px solid #ddd; border-radius: 0 4px 4px 0; cursor: pointer;">+</button>
+                            </div>
+                        </div>
+                        <div>Rp 120.000</div>
+                        <div>
+                            <button style="background: none; border: none; cursor: pointer; color: #ff6b6b;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Actions -->
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" placeholder="Kode Kupon" style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                        <button style="padding: 0 20px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">Terapkan</button>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: right;">
+                    <button style="padding: 12px 20px; background-color: #f0f0f0; color: #333; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;">Perbarui Keranjang</button>
+                </div>
+            </div>
+            
+            <!-- Cart Summary -->
+            <div style="display: flex; justify-content: flex-end;">
+                <div style="width: 100%; max-width: 400px; background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px;">
+                    <h2 style="font-size: 24px; margin-bottom: 20px;">Ringkasan Belanja</h2>
+                    
+                    <div style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+                        <span>Subtotal</span>
+                        <span>Rp 550.000</span>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+                        <span>Diskon</span>
+                        <span>Rp 0</span>
+                    </div>
+                    
+                    <div style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+                        <span>Estimasi Pengiriman</span>
+                        <span>Rp 20.000</span>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-weight: bold; font-size: 18px;">
+                        <span>Total</span>
+                        <span>Rp 570.000</span>
+                    </div>
+                    
+                    <button style="width: 100%; padding: 15px; background-color: #333; color: white; border: none; border-radius: 4px; margin-top: 20px; font-weight: bold; cursor: pointer;">Lanjutkan ke Pembayaran</button>
+                    
+                    <div style="margin-top: 20px; text-align: center;">
+                        <a href="pakaian.html" style="color: #333; text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px; vertical-align: middle;">
+                                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                            </svg>
+                            Lanjutkan Belanja
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section style="padding: 80px 0; background-color: #f0f0f0;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 28px; margin-bottom: 30px; text-align: center;">Mungkin Anda Juga Suka</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
+                <!-- Product 1 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Produk 1" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Kemeja Fana Casual</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Kemeja casual dengan desain minimalis</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 180.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Produk 2" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Celana Fana Chino</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Celana chino dengan bahan premium</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 220.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Produk 3" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Jaket Fana Denim</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Jaket denim dengan desain modern</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 320.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <img src="https://via.placeholder.com/300x300" alt="Produk 4" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 18px;">Tas Fana Sling Bag</h3>
+                        <p style="margin: 0 0 10px 0; color: #666;">Tas sling bag dengan bahan kanvas</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">Rp 150.000</span>
+                            <button style="padding: 8px 12px; background-color: #333; color: white; border: none; border-radius: 4px; cursor: pointer;">+ Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 50px 0; text-align: center;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="font-size: 28px; font-weight: bold; margin-bottom: 20px;">FANA CREATIVE</div>
+                <div style="margin: 20px 0;">
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Twitter</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    &copy; 2023 Fana Creative. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
