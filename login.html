@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Fana Creative</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f8f8f8; color: #333; display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Header -->
+   <header style="background-color: #ffffff; border-bottom: 1px solid #e5e5e5; padding: 15px 0;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" style="font-size: 18px; font-weight: bold; color: #333; text-decoration: none;">FANA CREATIVE</a>
+        
+        <div style="display: flex; align-items: center;">
+            <nav>
+                <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-right: 20px;"><a href="index.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Beranda</a></li>
+                    <li style="margin-right: 20px;"><a href="tentang.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Tentang Kami</a></li>
+                    <li style="margin-right: 20px;"><a href="pakaian.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Pakaian</a></li>
+                    <li style="margin-right: 20px;"><a href="kontak.html" style="text-decoration: none; color: #333; font-size: 14px; text-transform: uppercase;">Selengkapnya</a></li>
+                </ul>
+            </nav>
+            
+            <div style="display: flex; align-items: center;">
+                <a href="search.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <a href="login.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                </a>
+                <a href="keranjang.html" style="margin-left: 15px; color: #333; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Login Section -->
+    <section style="flex: 1; display: flex; justify-content: center; align-items: center; padding: 80px 0;">
+        <div style="width: 90%; max-width: 400px; background-color: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 40px;">
+            <h1 style="font-size: 28px; text-align: center; margin-bottom: 30px;">Masuk ke Akun Anda</h1>
+            
+            <form>
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+                    <input type="password" id="password" name="password" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <input type="checkbox" id="remember" name="remember" style="margin-right: 5px;">
+                        <label for="remember">Ingat saya</label>
+                    </div>
+                    <a href="#" style="color: #333; text-decoration: none; font-size: 14px;">Lupa password?</a>
+                </div>
+                <button type="submit" style="width: 100%; background-color: #333; color: white; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-bottom: 20px;">Masuk</button>
+                
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <p style="margin-bottom: 10px;">Atau masuk dengan</p>
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                        <button type="button" style="flex: 1; padding: 10px; border: 1px solid #ddd; background-color: white; border-radius: 4px; cursor: pointer;">Google</button>
+                        <button type="button" style="flex: 1; padding: 10px; border: 1px solid #ddd; background-color: white; border-radius: 4px; cursor: pointer;">Facebook</button>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <p>Belum punya akun? <a href="signup.html" style="color: #333; font-weight: bold; text-decoration: none;">Daftar sekarang</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 50px 0; text-align: center;">
+        <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="font-size: 28px; font-weight: bold; margin-bottom: 20px;">FANA CREATIVE</div>
+                <div style="margin: 20px 0;">
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Twitter</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    &copy; 2023 Fana Creative. Hak Cipta Dilindungi.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
